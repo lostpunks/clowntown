@@ -188,7 +188,7 @@ var queryPunk = function (punkIndex) {
                 });
             });
         } else {
-            label.innerHTML = "Clown Not Claimed Yet";
+            label.innerHTML = "Unclaimed Clown Punk";
             label.style.opacity = 100;
             if (ConnectedWallet.account) {
                 prepareMint(punkIndex);                
