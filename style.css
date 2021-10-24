@@ -1,0 +1,99 @@
+html {
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  margin: 0px;
+  background-color: #ffb8bf;
+}
+div.banner {
+  margin: 0px;    
+}
+div.content {
+  max-width: 700px;
+  margin: auto;
+}
+div.row {
+  width: 420px;
+  margin: auto; 
+  overflow: hidden;
+}
+#punk-image {
+  width: 200px;
+  height: 200px;
+  background-color: #648595; 
+  float:left;
+  margin-bottom: 8px;
+}
+#clown-image {
+  width: 200px;
+  height: 200px;
+  background-color: #efa8af; 
+  float: right;
+  margin-bottom: 8px;
+}
+div.punk-form-group {
+    width:  200px;
+    float: left;
+}
+div.clown-form-group {
+    width:  200px;
+    float: right;
+}
+input.form-control {
+  width: 80px;
+  text-align: center;
+  background-color: #efa8af;
+  border: 2px solid #cf888f;
+  border-radius: 4px;
+  outline: none;
+}
+::placeholder {
+  color: #af686f;
+  opacity: 1;
+}
+button {
+  font-weight: 500;
+  font-size: 16px;
+  color: #af686f;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 8px;
+  background-color: #efa8af;
+  border: 2px solid #cf888f;
+  border-radius: 4px;
+}
+label.form-control {
+  width: 200px;
+  line-height: 30px;
+}
+img.padded {
+  margin: 25px;
+}
+#clown-label {
+    opacity: 0;
+}
+#clown-button {
+    opacity: 0;
+}
+h1 {
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 0px;
+}
+img.banner {
+  width: 100% !important;
+}
+img.logo {
+  max-width: 24px;
+  max-height: 24px;
+  padding-left: 8px;
+  vertical-align: middle;
+}
+p {
+  font-weight: 500;
+  margin: 8px;
+  font-size: 16px;
+}
