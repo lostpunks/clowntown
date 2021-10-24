@@ -34,6 +34,21 @@ window.addEventListener('load', function() {
     Cryptopunks.contract = new web3.eth.Contract(Cryptopunks.ABI, Cryptopunks.address);
     Onchainpunks.contract = new web3.eth.Contract(Onchainpunks.ABI, Onchainpunks.address);
     Clowntownsociety.contract = new web3.eth.Contract(Clowntownsociety.ABI, Clowntownsociety.address);
+
+    let label = document.getElementById('sales-label');
+    Clowntownsociety.contract.methods.isPublicSaleOpen().call((error, isPublicSaleOpen) => {
+      if(error) {
+        console.log(error);
+        return;
+      }
+      Clowntownsociety.contract.methods.totalSupply().call((error, totalSupply) => {
+        if(error) {
+          console.log(error);
+          return;
+        }
+        label.innerHTML = totalSupply + "/10,000 minted" + (isPublicSaleOpen ? " - public sale open" : " - currently open to punk owners only");
+      });        
+    });
 });
 
 var connectWallet = async (punkIndex) => {
