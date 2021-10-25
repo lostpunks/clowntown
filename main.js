@@ -46,7 +46,7 @@ window.addEventListener('load', function() {
           console.log(error);
           return;
         }
-        label.innerHTML = totalSupply + "/10,000 minted" + (isPublicSaleOpen ? " - public sale open" : " - currently open to punk owners only");
+        label.innerHTML = totalSupply + "/10000 minted" + (isPublicSaleOpen ? " - public sale open" : " - currently open to punk owners only");
       });        
     });
 });
