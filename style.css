@@ -72,6 +72,12 @@ label.form-control {
 img.padded {
   margin: 25px;
 }
+p.announcement {
+  font-variant: small-caps;
+  font-style: oblique;
+  font-size: 20px;
+  color: #af686f;
+}
 #sales-label {
   font-variant: small-caps;
   font-style: oblique;
