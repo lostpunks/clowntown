@@ -44,9 +44,10 @@ div.clown-form-group {
 }
 input.form-control {
   width: 80px;
+  height: 15px;
   text-align: center;
   background-color: #efa8af;
-  border: 2px solid #cf888f;
+  border: 1px solid black;
   border-radius: 4px;
   outline: none;
 }
@@ -57,14 +58,18 @@ input.form-control {
 button {
   font-weight: 500;
   font-size: 16px;
-  color: #af686f;
+  color: black;
   width: 200px;
   height: 30px;
   margin-bottom: 8px;
   background-color: #efa8af;
-  border: 2px solid #cf888f;
+  border: 2px solid black;
   border-radius: 4px;
 }
+button:hover {
+  background: black;
+  color: #efa8af;
+} 
 label.form-control {
   width: 200px;
   line-height: 30px;
